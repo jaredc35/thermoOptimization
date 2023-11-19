@@ -78,7 +78,7 @@ with col2:
     fig.add_hline(y=8.5, line_color='red')
     fig.update_layout(showlegend=False)
     st.plotly_chart(fig)
-    st.write("After ",round(solution,1)," days, more heat lost through monopile than decay heat generated.  Temperatures begin cooling below boiling point.  Water level stabilized around ",
+    st.write("After ",round(solution,1)," days, more heat is lost through the monopile than decay heat generated.  Temperatures will begin to cool below the boiling point.  Water level will stabilize around ",
              round(stableLevel,1)," m.")
     st.dataframe(df[['Days after S/D', 'Mass Evaporated (kg)', 'Volume Remaining (m^3)', "Water Level Remaining (m)", "Decay Heat Produced (W)", 'Excess Decay Heat (kW)']])
     
