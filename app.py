@@ -44,7 +44,7 @@ for key, value in default_state.items():
         st.session_state[key] = value
 
 
-st.set_page_config(page_title="Blue Energy", page_icon=":radioactive_sign:",layout='wide')
+st.set_page_config(page_title="Decay Heat", page_icon=":radioactive_sign:",layout='wide')
 
 col1, col2 = st.columns([1,2])
 
