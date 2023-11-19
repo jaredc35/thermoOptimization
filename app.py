@@ -49,7 +49,7 @@ st.set_page_config(page_title="Decay Heat", page_icon=":radioactive_sign:",layou
 col1, col2 = st.columns([1,2])
 
 with col1: 
-    st.header("Ocean Assumptions")
+    st.header("Assumptions")
     ocean_expander()
 
     st.header("Monopile Sizes")

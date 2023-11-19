@@ -4,7 +4,7 @@ from equations import *
 
 
 def ocean_expander():
-    with st.expander("Ocean Characteristics"):
+    with st.expander("Various Assumptions"):
         st.slider("Ocean Temperature (F): ", value=st.session_state.oceanTemp, min_value=50, max_value=100, step=5, key='oceanTemp')
         st.number_input("Monopile Relief Setpoint (atm): ", value=st.session_state.reliefSetpoint, key='reliefSetpoint', on_change=runCalcs)
         st.slider("Initial Water Level (m)", value=st.session_state.initialWaterLvl, min_value=8.5, max_value=float(st.session_state.monopileHeight), step=0.25,
